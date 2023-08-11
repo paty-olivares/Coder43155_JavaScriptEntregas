@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCKMASTER - Viva el Rock</title>
+     <!-- Un bonito favicon-->
+     <link rel="shortcut icon" href="./img/rock_favicon.png" type="image/x-icon">
+    <!-- Mi CSS-->
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>
+        <a href="">
+            <img src="./img/logo.png" alt="Logo" >
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Inicio </a></li>
+                <li><a href="#"> Nosotros </a></li>
+                <li><a href="#"> Bandas </a></li>
+                <li><a href="#"> Boletos </a></li>
+                <li><a href="#"> Contacto </a></li>
+                <li><a href="#"> Ubicación </a></li>    
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1> Adquiere tus boletos aquí: </h1>
+         
+        <section class="bandasBox">
+            <div class="container">            
+            <label class="comprar" for="qosta"> Queen of Stone Age </label>
+            
+            <div class="myinputs">
+            <input type="number" id="qosta" name="qosta" min="0" max="3" />
+            <select id = "qostaList" >  
+              <option id="optQosta0" value="0"> ---Gradas $3000 | General $2000 --- </option>  
+              <option id="optQostaGradas" value="3000">  3000 </option>  
+              <option id="optQostaGeneral" value="2000"> 2000</option>
+             </select>
+              <div class="sumaresta">
+                <button class="botonesBox" id="subtotal_bt_calcular">+</button>
+                <button class="botonesBox" id="subtotal_bt_borrar">-</button>
+              </div>
+            </div>
+            </div>
+ 
+
+
+            <div class="container">  
+            <label class="comprar" for="thehives"> The Hives </label>
+            <div class="myinputs">
+            <input type="number" id="thehives" name="thehives" min="0" max="3" />
+            <select id = "thehivesList" >  
+                <option id="optTheHives0"  value="0"> ---Gradas $2000 | General $1500 --- </option>  
+                <option id="optTheHivesGradas" value="1500">  1500 </option>  
+                <option id="optTheHivesGeneral" value="2500"> 2500 </option>
+                </select>
+                <div class="sumaresta">
+                    <button class="botonesBox" id="subtotal_bt_calcular1">+</button>
+                    <button class="botonesBox" id="subtotal_bt_borrar1">-</button>
+                  </div>
+            </div>
+            </div>
+ 
+            <div class="container">  
+            <label class="comprar" for="thefoo"> Foo Fighters </label>
+            <div class="myinputs">
+            <input type="number" id="thefoo" name="foo" min="0" max="3" />
+            <select id = "thefooList" >  
+                <option id="optTheFoo0" value="0"> ---Gradas $2000 | General $1500 --- </option>  
+                <option id="optTheFooGradas" value="2000">  2000 </option>  
+                <option id="optTheFooGeneral" value="1500"> 1500</option>                      
+              </select>
+              <div class="sumaresta">
+                <button class="botonesBox" id="subtotal_bt_calcular2">+</button>
+                <button class="botonesBox" id="subtotal_bt_borrar2">-</button>
+              </div>
+            </div>
+            </div>          
+        </section>         
+            <div class="resultado"> 
+                <h2 id="h2"></h2>
+           </div>  
+         
+     <form action="formulario.html">
+            <div class="botonesFooter">
+            <button class="botones" type="submit" id="bt_comprar"> Comprar </button>
+            <button class="botones" type="reset"  id="bt_limpiar">  Limpiar </button>
+            </div>
+        </form>
+       
+
+    </main>
+ 
+    <footer>
+        <h3>Todos los Derechos Reservados ©2023</h3> 
+        <div class="redesSociales">
+         <h5>Síguenos en nuestras redes</h5>
+         <!--Redes Sociales icons -->
+         <div class="social-media-icons">
+            <a href="#" title=""> <img class="iconosRedes" src="./img/facebook.png" alt="facebook"></a>
+            <a href="#" title=""> <img class="iconosRedes" src="./img/instagram.png" alt="facebook"></a>
+            <a href="#" title=""> <img class="iconosRedes" src="./img/whatsapp.png" alt="facebook"></a>
+         </div>
+        </div>
+     </footer>
+
+     <script src="./js/step1.js"></script>
+</body>
+</html>

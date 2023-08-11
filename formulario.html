@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCKMASTER - Viva el Rock</title>
+     <!-- Un bonito favicon-->
+     <link rel="shortcut icon" href="./img/rock_favicon.png" type="image/x-icon">
+    <!-- Mi CSS-->
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>
+        <a href="">
+            <img src="./img/logo.png" alt="Logo" >
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Inicio </a></li>
+                <li><a href="#"> Nosotros </a></li>
+                <li><a href="#"> Bandas </a></li>
+                <li><a href="#"> Boletos </a></li>
+                <li><a href="#"> Contacto </a></li>
+                <li><a href="#"> Ubicación </a></li>    
+    
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <div class="resultado"> 
+            <h2 id="h2"></h2>
+       </div>  
+        
+
+       <!-- <form action="index.html"> -->
+        <div class="container">
+            <div class="myinputs">            
+                <label for="nombre"> Nombre y Apellido: </label>
+                <input type="text" id="nombre" required>
+
+                <label for="telefono"> Teléfono: </label>
+                <input type="text" id="telefono" required>
+
+                <label for="email"> Email: </label>
+                <input type="email" id="email" required>
+   
+
+                <label for="comentario"> Comentario: </label>
+                <textarea name="comentario" id="" cols="30" rows="10" placeholder="Escíbenos acá ..." required></textarea>
+            </div>
+        </div>
+        
+
+        <div class="containerBol0">
+            <div class="containerBoletos">  
+                <ul class="slider">
+                <li id="slide1">                
+                </li>
+                <li id="slide2">                
+                </li>
+                <li id="slide3">                
+                </li>
+                </ul>
+                
+                <ul class="menu"> Click para ver tus boletos
+                <li>
+                    <a href="#slide1">*</a>
+                </li>
+                <li>
+                    <a href="#slide2">*</a>
+                </li>
+                <li>
+                    <a href="#slide3">*</a>
+                </li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <div class="botonesFooter">
+            <button class="botones" type="submit" id="EnviarCompra"> Enviar </button>
+            <button class="botones" type="submit" id="EnviarIndex"> Atrás </button>               
+        </div>
+
+       <!-- </form> -->
+
+    </main>
+ 
+    <footer>
+        <h3>Todos los Derechos Reservados ©2023</h3> 
+        <div class="redesSociales">
+         <h5>Síguenos en nuestras redes</h5>
+         <!--Redes Sociales icons -->
+         <div class="social-media-icons">
+            <a href="#" title=""> <img class="iconosRedes" src="./img/facebook.png" alt="facebook"></a>
+            <a href="#" title=""> <img class="iconosRedes" src="./img/instagram.png" alt="facebook"></a>
+            <a href="#" title=""> <img class="iconosRedes" src="./img/whatsapp.png" alt="facebook"></a>
+         </div>
+        </div>
+     </footer>
+    
+     <script src="./js/step2.js"></script>
+</body>
+</html>
